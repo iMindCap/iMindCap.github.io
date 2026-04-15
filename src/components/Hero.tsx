@@ -22,20 +22,8 @@ export default function Hero() {
     <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", padding: "0 32px", maxWidth: 860, margin: "0 auto" }}>
       <div ref={ref} style={{ width: "100%" }}>
 
-        {/* Badge disponibilidad */}
-        <div style={{
-          display: "inline-flex", alignItems: "center", gap: 6,
-          fontSize: 12, fontWeight: 500, color: "#58a6ff",
-          background: "rgba(56,139,253,0.08)", border: "1px solid rgba(56,139,253,0.2)",
-          borderRadius: 999, padding: "5px 14px", marginBottom: 28,
-          letterSpacing: "0.04em", textTransform: "uppercase",
-        }}>
-          <span style={{ width: 6, height: 6, borderRadius: "50%", background: "#58a6ff", display: "inline-block" }} />
-          disponible para proyectos
-        </div>
-
         {/* Nombre */}
-        <h1 style={{ fontSize: "clamp(2.6rem, 6vw, 4.8rem)", fontWeight: 700, lineHeight: 1.05, letterSpacing: "-2.5px", color: "#e6edf3", marginBottom: 10 }}>
+        <h1 style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", fontWeight: 700, lineHeight: 1.05, letterSpacing: "-2.5px", color: "#e6edf3", marginBottom: 10 }}>
           Arael Amador<br />
         </h1>
 
