@@ -13,11 +13,11 @@ const socials = [
 
 export default function Contact() {
   return (
-    <section id="contacto" style={{ padding: "0 32px 80px", maxWidth: 900, margin: "0 auto" }}>
+    <section id="contacto" style={{ padding: "0 16px 80px", maxWidth: 900, margin: "0 auto" }}>
 
       {/* Eyebrow */}
-      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 40 }}>
-        <span style={{ fontSize: 25, letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e7681" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 32 }}>
+        <span style={{ fontSize: "clamp(18px, 4vw, 25px)", letterSpacing: "0.12em", textTransform: "uppercase", color: "#6e7681", whiteSpace: "nowrap" }}>
           Contacto
         </span>
         <div style={{ flex: 1, height: 1, background: "#161b22" }} />
@@ -25,31 +25,37 @@ export default function Contact() {
 
       <div style={{ background: "#161b22", border: "1px solid #21262d", borderRadius: 14, overflow: "hidden" }}>
 
-        {/* Zona superior — título + info */}
-        <div style={{ padding: "56px 56px 48px", display: "grid", gridTemplateColumns: "1fr auto", gap: 48, alignItems: "start" }}>
+        {/* Zona superior */}
+        <div style={{
+          padding: "clamp(28px, 6vw, 56px) clamp(20px, 6vw, 56px) clamp(24px, 5vw, 48px)",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gap: 32,
+          alignItems: "start",
+        }}>
           <div>
-            <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", fontWeight: 700, letterSpacing: "-1.2px", color: "#e6edf3", lineHeight: 1.1, marginBottom: 14 }}>
+            <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)", fontWeight: 700, letterSpacing: "-1.2px", color: "#e6edf3", lineHeight: 1.1, marginBottom: 14 }}>
               Construyamos<br />algo juntos.
             </h2>
-            <p style={{ fontSize: 14, color: "#6e7681", lineHeight: 1.85, maxWidth: 360 }}>
+            <p style={{ fontSize: "clamp(13px, 2.5vw, 14px)", color: "#6e7681", lineHeight: 1.85, maxWidth: 360 }}>
               Abierto a oportunidades, colaboraciones, proyectos open source o para conversar sobre las últimas tendencias en tech.
             </p>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 10, minWidth: 200 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
             {[
-              { label: "Email", value: "arael.amadorlp@gmail.com", href: "mailto:arael.amadorlp@email.com" },
+              { label: "Email", value: "arael.amadorlp@gmail.com", href: "mailto:arael.amadorlp@gmail.com" },
               { label: "Ubicación", value: "México" }
             ].map((item, i) => (
               <div key={item.label}>
                 {i > 0 && <div style={{ width: "100%", height: 1, background: "#21262d", marginBottom: 10 }} />}
                 <p style={{ fontSize: 10, fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#30363d", marginBottom: 3 }}>{item.label}</p>
                 {item.href
-                  ? <a href={item.href} style={{ fontSize: 13, color: "#6e7681", textDecoration: "none" }}
+                  ? <a href={item.href} style={{ fontSize: 13, color: "#6e7681", textDecoration: "none", wordBreak: "break-all" }}
                       onMouseEnter={e => (e.currentTarget.style.color = "#e6edf3")}
                       onMouseLeave={e => (e.currentTarget.style.color = "#6e7681")}
                     >{item.value}</a>
-                  : <p style={{ fontSize: 13, }}>{item.value}</p>
+                  : <p style={{ fontSize: 13, color: "#6e7681" }}>{item.value}</p>
                 }
               </div>
             ))}
@@ -59,9 +65,13 @@ export default function Contact() {
         {/* Divisor */}
         <div style={{ width: "100%", height: 1, background: "#21262d" }} />
 
-        {/* Zona inferior — CTA + iconos */}
-        <div style={{ padding: "28px 56px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
-          <a href="mailto:tu@email.com" style={{
+        {/* Zona inferior */}
+        <div style={{
+          padding: "clamp(20px, 4vw, 28px) clamp(20px, 6vw, 56px)",
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          flexWrap: "wrap", gap: 16,
+        }}>
+          <a href="mailto:arael.amadorlp@gmail.com" style={{
             fontSize: 13, fontWeight: 500, color: "#fff", textDecoration: "none",
             display: "inline-flex", alignItems: "center", gap: 8,
             padding: "10px 22px", borderRadius: 8,
