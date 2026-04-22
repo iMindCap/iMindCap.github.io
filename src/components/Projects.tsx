@@ -2,8 +2,8 @@
 
 const projects = [
   {
-    title: "Admin Dashboard",
-    description: "E-commerce Admin Dashboard",
+    title: "E-commerce Admin Dashboard",
+    description: "Desarrollo del núcleo lógico y funcional de una plataforma administrativa para comercio electrónico. Implementé la arquitectura de datos para la gestión de pedidos, procesamiento de ingresos y seguimiento de inventario.",
     tags: ["Next.js", "JavaScript", "Tailwind", "Radux UI", "Supabase"],
     github: "https://github.com/iMindCap/admin-panel",
     demo: "https://admin-panel-lemon-zeta.vercel.app/"

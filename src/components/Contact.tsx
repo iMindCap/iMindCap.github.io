@@ -35,7 +35,7 @@ export default function Contact() {
         }}>
           <div>
             <h2 style={{ fontSize: "clamp(1.6rem, 4vw, 2.6rem)", fontWeight: 700, letterSpacing: "-1.2px", color: "#e6edf3", lineHeight: 1.1, marginBottom: 14 }}>
-              Construyamos<br />algo juntos.
+              Hablemos.
             </h2>
             <p style={{ fontSize: "clamp(13px, 2.5vw, 14px)", color: "#6e7681", lineHeight: 1.85, maxWidth: 360 }}>
               Abierto a oportunidades, colaboraciones, proyectos open source o para conversar sobre las últimas tendencias en tech.
